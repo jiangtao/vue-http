@@ -173,11 +173,11 @@ function responseStatusHandler(http, opts) {
         if (res.status === 601) {
             return new _promise2.default(opts.error.bind(null, res.statusText));
         }
-
-        if (('' + res.status).charAt(0) === '4') {
-            return new _promise2.default(opts.error.bind(null, '请求资源不存在'));
+        /*
+        if (`${res.status}`.charAt(0) === '4') {
+            return new Promise(opts.error.bind(null, '请求资源不存在'))
         }
-
+        */
         if (('' + res.status).charAt(0) === '5') {
             return new _promise2.default(opts.error.bind(null, '服务器繁忙，请稍后再试'));
         }
