@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/vue-tools/vue-http/issues"
   },
-  "types": "types/index.d.ts"
+  "types": "types/index.d.ts",
   "babel": {
     "presets": [
       "es2015",
